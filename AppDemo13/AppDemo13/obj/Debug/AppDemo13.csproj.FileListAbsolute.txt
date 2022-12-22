@@ -92,3 +92,5 @@ C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.csproj.CoreCompi
 C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.exe
 C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.pdb
 C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.View.Inicio.resources
+C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.csproj.AssemblyReference.cache
+C:\asp\basico\AppDemo13\AppDemo13\AppDemo13\obj\Debug\AppDemo13.csproj.SuggestedBindingRedirects.cache

@@ -49,24 +49,22 @@
             // btnLeer
             // 
             this.btnLeer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeer.Location = new System.Drawing.Point(124, 368);
-            this.btnLeer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLeer.Location = new System.Drawing.Point(93, 299);
             this.btnLeer.Name = "btnLeer";
-            this.btnLeer.Size = new System.Drawing.Size(97, 39);
+            this.btnLeer.Size = new System.Drawing.Size(73, 32);
             this.btnLeer.TabIndex = 24;
-            this.btnLeer.Text = "Leer";
+            this.btnLeer.Text = "Dequeue";
             this.btnLeer.UseVisualStyleBackColor = true;
             this.btnLeer.Click += new System.EventHandler(this.btnLeer_Click);
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(19, 368);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(14, 299);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(97, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(73, 32);
             this.btnAgregar.TabIndex = 25;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "Enqueue";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
@@ -80,11 +78,10 @@
             this.Fecha,
             this.Monto,
             this.Cliente});
-            this.dgdfactura.Location = new System.Drawing.Point(20, 92);
-            this.dgdfactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgdfactura.Location = new System.Drawing.Point(15, 75);
             this.dgdfactura.Name = "dgdfactura";
             this.dgdfactura.ReadOnly = true;
-            this.dgdfactura.Size = new System.Drawing.Size(596, 257);
+            this.dgdfactura.Size = new System.Drawing.Size(447, 209);
             this.dgdfactura.TabIndex = 23;
             // 
             // Numero
@@ -114,47 +111,42 @@
             // dtfecha
             // 
             this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtfecha.Location = new System.Drawing.Point(259, 12);
-            this.dtfecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtfecha.Location = new System.Drawing.Point(194, 10);
             this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(168, 22);
+            this.dtfecha.Size = new System.Drawing.Size(127, 20);
             this.dtfecha.TabIndex = 22;
             // 
             // txtcliente
             // 
-            this.txtcliente.Location = new System.Drawing.Point(259, 60);
-            this.txtcliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcliente.Location = new System.Drawing.Point(194, 49);
             this.txtcliente.Name = "txtcliente";
-            this.txtcliente.Size = new System.Drawing.Size(168, 22);
+            this.txtcliente.Size = new System.Drawing.Size(127, 20);
             this.txtcliente.TabIndex = 21;
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(184, 64);
-            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label4.Location = new System.Drawing.Point(138, 52);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(58, 17);
+            this.Label4.Size = new System.Drawing.Size(46, 13);
             this.Label4.TabIndex = 18;
             this.Label4.Text = "Cliente";
             // 
             // txtmonto
             // 
-            this.txtmonto.Location = new System.Drawing.Point(99, 57);
-            this.txtmonto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmonto.Location = new System.Drawing.Point(74, 46);
             this.txtmonto.Name = "txtmonto";
-            this.txtmonto.Size = new System.Drawing.Size(61, 22);
+            this.txtmonto.Size = new System.Drawing.Size(47, 20);
             this.txtmonto.TabIndex = 19;
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(24, 60);
-            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label3.Location = new System.Drawing.Point(18, 49);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(52, 17);
+            this.Label3.Size = new System.Drawing.Size(42, 13);
             this.Label3.TabIndex = 16;
             this.Label3.Text = "Monto";
             // 
@@ -162,38 +154,35 @@
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(184, 17);
-            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label2.Location = new System.Drawing.Point(138, 14);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(52, 17);
+            this.Label2.Size = new System.Drawing.Size(42, 13);
             this.Label2.TabIndex = 17;
             this.Label2.Text = "Fecha";
             // 
             // txtnumero
             // 
-            this.txtnumero.Location = new System.Drawing.Point(99, 14);
-            this.txtnumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtnumero.Location = new System.Drawing.Point(74, 11);
             this.txtnumero.Name = "txtnumero";
-            this.txtnumero.Size = new System.Drawing.Size(61, 22);
+            this.txtnumero.Size = new System.Drawing.Size(47, 20);
             this.txtnumero.TabIndex = 20;
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(24, 17);
-            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label1.Location = new System.Drawing.Point(18, 14);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(64, 17);
+            this.Label1.Size = new System.Drawing.Size(50, 13);
             this.Label1.TabIndex = 15;
             this.Label1.Text = "Numero";
             // 
             // frmCola
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(640, 415);
+            this.ClientSize = new System.Drawing.Size(666, 402);
             this.Controls.Add(this.btnLeer);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgdfactura);
@@ -205,7 +194,6 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.txtnumero);
             this.Controls.Add(this.Label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCola";
             this.Text = ":: uso de Colas ::";
             ((System.ComponentModel.ISupportInitialize)(this.dgdfactura)).EndInit();

@@ -100,5 +100,10 @@ namespace AppDemo13.View
         {
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
