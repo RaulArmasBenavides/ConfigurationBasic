@@ -1,8 +1,5 @@
 ﻿using AppDemo13.View;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppDemo13
@@ -17,7 +14,7 @@ namespace AppDemo13
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCola());
+            Application.Run(new Inicio());
         }
     }
 }
