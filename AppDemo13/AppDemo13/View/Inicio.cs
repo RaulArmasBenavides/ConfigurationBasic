@@ -550,5 +550,23 @@ namespace AppDemo13.View
             f.MdiParent = this;
             f.Show();
         }
+
+        private void ejemplo01ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSobrecarga f = new frmSobrecarga();
+            Application.OpenForms.Cast<Form>();
+            Form fm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmSobrecarga);
+
+            if (fm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                fm.BringToFront();
+                return;
+            }
+
+            f.MdiParent = this;
+            f.Show();
+
+        }
     }
 }
