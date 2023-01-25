@@ -58,20 +58,16 @@
             this.costosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recursosHumanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.equiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaDeEquiposToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobrecargaDeFuncionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejemplo01ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coleccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobrecargaDeFuncionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejemplo01ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -297,8 +293,8 @@
             this.mantenimientoToolStripMenuItem});
             this.imprentaToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.imprentaToolStripMenuItem.Name = "imprentaToolStripMenuItem";
-            this.imprentaToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
-            this.imprentaToolStripMenuItem.Text = "ERP";
+            this.imprentaToolStripMenuItem.Size = new System.Drawing.Size(121, 29);
+            this.imprentaToolStripMenuItem.Text = "Contactos";
             // 
             // cProducciónToolStripMenuItem
             // 
@@ -332,42 +328,10 @@
             // 
             // mantenimientoToolStripMenuItem
             // 
-            this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.instalacionesToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(279, 28);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // instalacionesToolStripMenuItem
-            // 
-            this.instalacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salasToolStripMenuItem,
-            this.equiposToolStripMenuItem,
-            this.listaDeEquiposToolStripMenuItem1});
-            this.instalacionesToolStripMenuItem.Name = "instalacionesToolStripMenuItem";
-            this.instalacionesToolStripMenuItem.Size = new System.Drawing.Size(218, 28);
-            this.instalacionesToolStripMenuItem.Text = "Instalaciones";
-            // 
-            // salasToolStripMenuItem
-            // 
-            this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
-            this.salasToolStripMenuItem.Size = new System.Drawing.Size(319, 28);
-            this.salasToolStripMenuItem.Text = "Mantenedor de Salas";
-            this.salasToolStripMenuItem.Click += new System.EventHandler(this.salasToolStripMenuItem_Click);
-            // 
-            // equiposToolStripMenuItem
-            // 
-            this.equiposToolStripMenuItem.Name = "equiposToolStripMenuItem";
-            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(319, 28);
-            this.equiposToolStripMenuItem.Text = "Mantenedor de Equipos";
-            this.equiposToolStripMenuItem.Click += new System.EventHandler(this.equiposToolStripMenuItem_Click);
-            // 
-            // listaDeEquiposToolStripMenuItem1
-            // 
-            this.listaDeEquiposToolStripMenuItem1.Name = "listaDeEquiposToolStripMenuItem1";
-            this.listaDeEquiposToolStripMenuItem1.Size = new System.Drawing.Size(319, 28);
-            this.listaDeEquiposToolStripMenuItem1.Text = "Lista de Equipos";
-            this.listaDeEquiposToolStripMenuItem1.Click += new System.EventHandler(this.listaDeEquiposToolStripMenuItem1_Click);
+            this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -386,6 +350,21 @@
             this.testToolStripMenuItem.Size = new System.Drawing.Size(117, 29);
             this.testToolStripMenuItem.Text = "Funciones";
             this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
+            // 
+            // sobrecargaDeFuncionesToolStripMenuItem
+            // 
+            this.sobrecargaDeFuncionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejemplo01ToolStripMenuItem});
+            this.sobrecargaDeFuncionesToolStripMenuItem.Name = "sobrecargaDeFuncionesToolStripMenuItem";
+            this.sobrecargaDeFuncionesToolStripMenuItem.Size = new System.Drawing.Size(316, 30);
+            this.sobrecargaDeFuncionesToolStripMenuItem.Text = "Sobrecarga de funciones";
+            // 
+            // ejemplo01ToolStripMenuItem
+            // 
+            this.ejemplo01ToolStripMenuItem.Name = "ejemplo01ToolStripMenuItem";
+            this.ejemplo01ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.ejemplo01ToolStripMenuItem.Text = "Ejemplo01";
+            this.ejemplo01ToolStripMenuItem.Click += new System.EventHandler(this.ejemplo01ToolStripMenuItem_Click);
             // 
             // coleccionesToolStripMenuItem
             // 
@@ -434,21 +413,6 @@
             this.paisToolStripMenuItem.Text = "Pais";
             this.paisToolStripMenuItem.Click += new System.EventHandler(this.paisToolStripMenuItem_Click);
             // 
-            // sobrecargaDeFuncionesToolStripMenuItem
-            // 
-            this.sobrecargaDeFuncionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejemplo01ToolStripMenuItem});
-            this.sobrecargaDeFuncionesToolStripMenuItem.Name = "sobrecargaDeFuncionesToolStripMenuItem";
-            this.sobrecargaDeFuncionesToolStripMenuItem.Size = new System.Drawing.Size(316, 30);
-            this.sobrecargaDeFuncionesToolStripMenuItem.Text = "Sobrecarga de funciones";
-            // 
-            // ejemplo01ToolStripMenuItem
-            // 
-            this.ejemplo01ToolStripMenuItem.Name = "ejemplo01ToolStripMenuItem";
-            this.ejemplo01ToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
-            this.ejemplo01ToolStripMenuItem.Text = "Ejemplo01";
-            this.ejemplo01ToolStripMenuItem.Click += new System.EventHandler(this.ejemplo01ToolStripMenuItem_Click);
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -460,7 +424,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Inicio";
             this.Text = ":: Sistema de Gestión de Proyectos de Extensión Universitaria ERP FII 1.0.0 ::";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -488,10 +452,6 @@
         private System.Windows.Forms.ToolStripMenuItem cProducciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorialEImprentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem equiposToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaDeEquiposToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem recursosHumanosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem;

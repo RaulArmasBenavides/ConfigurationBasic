@@ -55,6 +55,12 @@
     <Compile Include="Model\Vehiculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\frmContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmContactos.designer.cs">
+      <DependentUpon>frmContactos.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmSobrecarga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\frmContactos.resx">
+      <DependentUpon>frmContactos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmSobrecarga.resx">
       <DependentUpon>frmSobrecarga.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Business\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b5b42e2ad311396008a8cb5dfb610c7c.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

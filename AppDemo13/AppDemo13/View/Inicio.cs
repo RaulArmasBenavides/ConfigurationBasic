@@ -568,5 +568,22 @@ namespace AppDemo13.View
             f.Show();
 
         }
+
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmContactos f = new frmContactos();
+            Application.OpenForms.Cast<Form>();
+            Form fm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmContactos);
+
+            if (fm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                fm.BringToFront();
+                return;
+            }
+
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }
