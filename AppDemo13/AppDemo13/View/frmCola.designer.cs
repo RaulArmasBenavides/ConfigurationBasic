@@ -182,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(666, 402);
+            this.ClientSize = new System.Drawing.Size(688, 387);
             this.Controls.Add(this.btnLeer);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgdfactura);
