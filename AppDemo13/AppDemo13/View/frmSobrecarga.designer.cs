@@ -55,6 +55,13 @@
             this.txt_result = new System.Windows.Forms.RichTextBox();
             this.lbl_conteo = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtFormato = new System.Windows.Forms.TextBox();
+            this.txtResultadoFecha = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.LblHora = new System.Windows.Forms.Label();
             this.grp_Vector1.SuspendLayout();
             this.grp_Vector2.SuspendLayout();
             this.SuspendLayout();
@@ -260,7 +267,7 @@
             // 
             // btn_submit
             // 
-            this.btn_submit.Location = new System.Drawing.Point(646, 90);
+            this.btn_submit.Location = new System.Drawing.Point(646, 19);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(186, 40);
             this.btn_submit.TabIndex = 3;
@@ -270,7 +277,7 @@
             // 
             // btn_clean
             // 
-            this.btn_clean.Location = new System.Drawing.Point(646, 148);
+            this.btn_clean.Location = new System.Drawing.Point(646, 65);
             this.btn_clean.Name = "btn_clean";
             this.btn_clean.Size = new System.Drawing.Size(186, 42);
             this.btn_clean.TabIndex = 4;
@@ -295,7 +302,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(646, 205);
+            this.button1.Location = new System.Drawing.Point(646, 113);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 40);
             this.button1.TabIndex = 7;
@@ -303,11 +310,76 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(646, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 40);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Convertir fecha";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtFormato
+            // 
+            this.txtFormato.Location = new System.Drawing.Point(879, 170);
+            this.txtFormato.Name = "txtFormato";
+            this.txtFormato.Size = new System.Drawing.Size(128, 20);
+            this.txtFormato.TabIndex = 15;
+            // 
+            // txtResultadoFecha
+            // 
+            this.txtResultadoFecha.Location = new System.Drawing.Point(879, 219);
+            this.txtResultadoFecha.Name = "txtResultadoFecha";
+            this.txtResultadoFecha.Size = new System.Drawing.Size(128, 20);
+            this.txtResultadoFecha.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(876, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Formato";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(876, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Resultado";
+            // 
+            // txtHora
+            // 
+            this.txtHora.Location = new System.Drawing.Point(879, 124);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(128, 20);
+            this.txtHora.TabIndex = 19;
+            // 
+            // LblHora
+            // 
+            this.LblHora.AutoSize = true;
+            this.LblHora.Location = new System.Drawing.Point(876, 101);
+            this.LblHora.Name = "LblHora";
+            this.LblHora.Size = new System.Drawing.Size(30, 13);
+            this.LblHora.TabIndex = 20;
+            this.LblHora.Text = "Hora";
+            // 
+            // frmSobrecarga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 518);
+            this.ClientSize = new System.Drawing.Size(1312, 553);
+            this.Controls.Add(this.LblHora);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtResultadoFecha);
+            this.Controls.Add(this.txtFormato);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_conteo);
             this.Controls.Add(this.txt_result);
@@ -315,7 +387,7 @@
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.grp_Vector2);
             this.Controls.Add(this.grp_Vector1);
-            this.Name = "Form1";
+            this.Name = "frmSobrecarga";
             this.Text = "Suma de vectores";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grp_Vector1.ResumeLayout(false);
@@ -356,6 +428,13 @@
         private System.Windows.Forms.RichTextBox txt_result;
         private System.Windows.Forms.Label lbl_conteo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtFormato;
+        private System.Windows.Forms.TextBox txtResultadoFecha;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.Label LblHora;
     }
 }
 

@@ -106,16 +106,11 @@ namespace AppDemo13
             txt_result.Text = mresult;
         }
 
-
-        /*private void GenerateRandomNumbers()
+        private void button2_Click(object sender, EventArgs e)
         {
-            
-            txt_component1_1.Text = r
-            txt_component1_2.Text = "3";
-            txt_component1_3.Text = "4";
-
-        }*/
-
+            txtResultadoFecha.Text = DateTime.Now.ToString("yyMMdd");
+            txtHora.Text = DateTime.Now.Hour.ToString();
+        }
 
     }
 }
