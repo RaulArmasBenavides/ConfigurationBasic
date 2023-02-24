@@ -585,5 +585,23 @@ namespace AppDemo13.View
             f.MdiParent = this;
             f.Show();
         }
+
+        private void subirImágenesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUpload f = new FrmUpload();
+            Application.OpenForms.Cast<Form>();
+            Form fm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FrmUpload);
+
+            if (fm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                fm.BringToFront();
+                return;
+            }
+
+            f.MdiParent = this;
+            f.Show();
+
+        }
     }
 }
