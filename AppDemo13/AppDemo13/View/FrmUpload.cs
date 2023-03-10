@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -100,6 +101,52 @@ namespace AppDemo13.View
             {
                 result = reader.ReadToEnd();
             }
+        }
+
+        private void FrmUpload_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string property = txtProperty.Text;
+
+            try
+            {
+                DirectoryEntry myLdapConnection = createDirectoryEntry();
+
+                DirectorySearcher search = new DirectorySearcher(myLdapConnection);
+                search.PropertiesToLoad.Add("cn");
+                search.PropertiesToLoad.Add(property);
+
+                SearchResultCollection allUsers = search.FindAll();
+
+                foreach (SearchResult result in allUsers)
+                {
+                    if (result.Properties["cn"].Count > 0 && result.Properties[property].Count > 0)
+                    {
+
+                        txt_result.Text = String.Format("{0,-20} : {1}",
+                                      result.Properties["cn"][0].ToString(),
+                                      result.Properties[property][0].ToString());
+                
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                txt_result.Text = "Exception caught:\n\n" + ex.Message.ToString();
+            }
+        }
+        static DirectoryEntry createDirectoryEntry()
+        {
+            // create and return new LDAP connection with desired settings  
+            DirectoryEntry ldapConnection = new DirectoryEntry("rizzo.leeds-art.ac.uk");
+            ldapConnection.Path = "LDAP://OU=staffusers,DC=leeds-art,DC=ac,DC=uk";
+            ldapConnection.AuthenticationType = AuthenticationTypes.Secure;
+            return ldapConnection;
         }
     }
 }
