@@ -44,6 +44,7 @@ namespace AppDemo13.View
             this.btnSubir.TabIndex = 3;
             this.btnSubir.Text = "Subir Documento";
             this.btnSubir.UseVisualStyleBackColor = true;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
             // 
             // button1
             // 
@@ -58,7 +59,7 @@ namespace AppDemo13.View
             // 
             // txt_result
             // 
-            this.txt_result.Location = new System.Drawing.Point(61, 76);
+            this.txt_result.Location = new System.Drawing.Point(61, 70);
             this.txt_result.Name = "txt_result";
             this.txt_result.Size = new System.Drawing.Size(819, 422);
             this.txt_result.TabIndex = 6;
@@ -70,6 +71,7 @@ namespace AppDemo13.View
             this.txtProperty.Name = "txtProperty";
             this.txtProperty.Size = new System.Drawing.Size(148, 20);
             this.txtProperty.TabIndex = 10;
+            this.txtProperty.TextChanged += new System.EventHandler(this.txtProperty_TextChanged);
             // 
             // FrmUpload
             // 

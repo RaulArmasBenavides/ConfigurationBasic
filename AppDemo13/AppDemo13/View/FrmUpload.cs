@@ -148,5 +148,15 @@ namespace AppDemo13.View
             ldapConnection.AuthenticationType = AuthenticationTypes.Secure;
             return ldapConnection;
         }
+
+        private void txtProperty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
