@@ -10,12 +10,10 @@ using System.Threading;
 
 namespace AppDemo13.Common
 {
-    public class Helper2
+    public class ImageHelper
     {
      
         #region Images
-
-
         public static Bitmap ByteToImage(byte[] blob)
         {
             MemoryStream mStream = new MemoryStream();

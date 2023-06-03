@@ -7,8 +7,8 @@
     <ProjectGuid>{A030FB41-B39A-4CDB-B7DD-33D573ED0FA2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppDemo13</RootNamespace>
-    <AssemblyName>AppDemo13</AssemblyName>
+    <RootNamespace>ConfigurationBasic</RootNamespace>
+    <AssemblyName>ConfigurationBasic</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,12 +49,18 @@
     <Reference Include="RestSharp, Version=108.0.3.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.108.0.3\lib\netstandard2.0\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="SmtpServer, Version=9.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SmtpServer.9.0.2\lib\netstandard2.0\SmtpServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Pipelines, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.4.7.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -94,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Colecciones\GestorColecciones.cs" />
-    <Compile Include="common\Helper2.cs" />
+    <Compile Include="common\ImageHelper.cs" />
     <Compile Include="Model\Alumno.cs" />
     <Compile Include="Model\Factura.cs" />
     <Compile Include="Model\Pais.cs" />
