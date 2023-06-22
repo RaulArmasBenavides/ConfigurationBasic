@@ -1,4 +1,5 @@
 ﻿using AppDemo13.Common;
+using ConfigurationBasic.common;
 using GemBox.Spreadsheet;
 using RestSharp;
 using System;
@@ -157,6 +158,16 @@ namespace AppDemo13.View
         private void btnSubir_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FileHelper.ChangeVersionFiles(txtPathChangeDate.Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FileHelper.ChangeVersionFilesMinutes(txtPathChangeDate.Text);
         }
     }
 }
